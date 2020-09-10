@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-top:10px;
+  height:100px;
 }
 
 .App-logo {
@@ -35,4 +37,105 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.playground{
+  margin-left:auto;
+  margin-right:auto;
+  border:2px solid #000;
+}
+
+.head::before{
+  content:":";
+  font-size:15px;
+  bottom:9px;
+  left:1.5px;
+  position:relative;
+  font-weight:900;
+  z-index:1000;
+}
+
+.head{
+  z-index:999;
+}
+
+.L{
+  transform: rotate(180deg);
+}
+
+.D{
+  transform: rotate(90deg);
+}
+
+.U{
+  transform: rotate(270deg);
+}
+
+.snakeBody{max-height:10px;}
+
+.homePageDiv{
+  text-align:center;
+}
+
+.homePage, .newGame, .pause{
+  cursor:pointer;
+}
+
+#sColor > option:hover{
+  background:none;
+}
+
+select{
+  width:100px !important;
+}
+
+button{
+  width:150px;
+  border-radius:10px;
+  border-color:aliceblue;
+  background-color:aquamarine;
+}
+button:hover{
+  transform: scale(1.15);
+}
+
+.controls{
+  margin-bottom:10px;
+}
+
+.controls button{
+  width:60px;
+  height:60px;
+  background-color:goldenrod;
+  border-color:#000;
+  border-width:4px;
+}
+
+.controls button:hover{
+  transform:none;
+  cursor:pointer;
+}
+
+.controls .left::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+}
+.controls .right::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+}
+.controls .up::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+}
+.controls .down::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f063";
+}
+.controls button::before{
+  font-size:30px;
 }
