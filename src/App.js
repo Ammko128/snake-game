@@ -169,8 +169,15 @@ class App extends React.Component {
         <br />
         Length: {this.state.snakeLength}
         </div>
+
+        <div style={{marginTop: window.innerWidth>=this.state.size*10+120?this.state.size>10 ? "-120px" : "-25px" : "0px", marginBottom: "20px", width:"100%", marginLeft:"auto", marginRight:"auto"}} className="description">
+          If you are playing on a touch screen use the on-screen arrows to control the snake.<br />
+          Otherwise you can use "WASD" or arrow keys on your keyboard to control the snake.<br />
+          Press R to restart the game and P to pause the game.<br />
+        </div>
+
         {window.innerWidth>=this.state.size*10+120 && this.state.controls ?
-        <div style={{marginTop: this.state.size>10 ? "-120px" : "-25px"}} className="controls">
+        <div className="controls">
         <button
           className="up"
           onClick={() => {if(this.state.changeDir==="n") this.setState({changeDir:"u"})}}
